@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menuDocument>
+  <menu>
+    <subMenu id="mag_menu_parm">
+      <label>MAG</label>
+      <titleItem>
+        <label>MAG Tools</label>
+      </titleItem>
+
+      <scriptItem id="bake_all_parameter">
+        <label>Bake All Parameters</label>
+        <scriptCode><![CDATA[import sys
+sys.dont_write_bytecode = True
+from packages.scripts.houdini import bake_parameters
+bake_parameters.bakeAllParms(kwargs)]]></scriptCode>
+      </scriptItem>
+
+    </subMenu>
+  </menu>
+</menuDocument>
